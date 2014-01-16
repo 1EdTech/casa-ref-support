@@ -1,8 +1,9 @@
 require 'logger'
+require 'delegate'
 
 module CASA
   module Support
-    class ScopedLogger < SimpleDelegator
+    class ScopedLogger < ::SimpleDelegator
 
       class << self
         def new_without_scope logdev, shift_age = 0, shift_size = 1048576
@@ -27,9 +28,9 @@ module CASA
 
       def scoped_progname progname = nil
         if @scope
-          progname = progname ? "#{@scope} - #{progname}" : @scope
+          progname ? "#{@scope} - #{progname}" : @scope
         else
-          progname = @scope ? @scope : nil
+          progname ? progname : nil
         end
       end
 
