@@ -1,3 +1,15 @@
 # CASA Support
 
-[![Code Climate](https://codeclimate.com/github/AppSharing/casa-support.png)](https://codeclimate.com/github/AppSharing/casa-support) [![Build Status](https://travis-ci.org/AppSharing/casa-support.png)](https://travis-ci.org/AppSharing/casa-support) [![Coverage Status](https://coveralls.io/repos/AppSharing/casa-support/badge.png)](https://coveralls.io/r/AppSharing/casa-support) [![Dependency Status](https://gemnasium.com/AppSharing/casa-support.png)](https://gemnasium.com/AppSharing/casa-support)
+The [Community App Sharing Architecture (CASA)](http://imsglobal.github.io/casa) provides a mechanism for
+discovering and sharing metadata about web resources such as websites, mobile
+apps and LTI tools. It models real-world decision-making through extensible
+attributes, filter and transform operations, flexible peering relationships,
+etc.
+
+This Ruby gem is part of the CASA reference implementation. It provides non-
+core support objects.
+
+## License
+
+This software is **open-source** and licensed under the Apache 2 license.
+The full text of the license may be found in the `LICENSE` file.
